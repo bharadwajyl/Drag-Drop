@@ -1,5 +1,12 @@
 //Global variables
-var file, file_name, ext, formData = new FormData(), data, url="root/", allowedExtensions = /(\.jpg|\.jpeg|\.png|\.pdf)$/i;
+var file,
+    file_name,
+    ext,
+    formData = new FormData(),
+    data,
+    url="root/",
+    no_files_to_allow = 2,
+    allowedExtensions = /(\.jpg|\.jpeg|\.png|\.pdf)$/i;
 
 // preventing page from redirecting
 $("html").on("dragover", function(e) { stop(e); });
@@ -25,7 +32,7 @@ function append_file(e){
     if(!allowedExtensions.exec(file)){
         popup(0, "This file type is not allowed");
     } else {
-        if ($(".file_preview li").length >= 2){
+        if ($(".file_preview li").length >= no_of_files_to_allow){
             popup(0, "Max file uploads have reached");
             return 1;
         } else {

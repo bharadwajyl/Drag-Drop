@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--TITLE-->
+<title>Title goes here</title>
+
+<!--SHORTCUT ICON-->
+<link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+<!--META TAGS-->
+<meta charset="UTF-8" />
+<meta name="language" content="ES" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!--ICONIFY-->
+<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!--STYLE SHEET-->
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/dragger.css" />
+
+</head>
+<body>
+
+<form class="dragger padding_2x">
+    <label class="fixed_flex padding_3x">
+        <i class="fa fa-cloud-upload"></i>
+        <h2 class="title">Drag & Drop<br>or <em>Upload</em></h2>
+        <p>Accepted png, jpg, jpeg, pdf</p>
+        <input type="file" name="dragger[]" input-mode="file" accept=".png,.jpg,.jpeg,.pdf" />
+    </label>
+    
+    <ul class="file_preview"></ul>
+</form>
+
+<!--JAVASCRIPT-->
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/dragger.js"></script>
+
+</body>
+</html>

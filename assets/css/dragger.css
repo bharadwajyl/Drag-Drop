@@ -1,0 +1,68 @@
+/***************************
+      DRAG & DROP FORM
+****************************/
+label input{
+    display:none;
+}
+
+.dragger label{
+    background-color:#f9f9f9;
+    border:1px dotted var(--gray);
+    border-radius:10px;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.dragger label iconify-icon, .dragger label .title, .dragger label p{
+    flex:0 0 100%;
+}
+
+.dragger label .fa{
+    font-size:3em;
+    color:#3399ff;
+}
+
+.dragger label em{
+    color:#3399ff;
+    cursor:pointer;
+}
+
+.dragger label p{
+    font-weight:300;
+    font-size:12px;
+}
+
+.file_preview{
+    padding:0;
+}
+
+.file_preview li{
+    align-items:center;
+    border:1px solid rgba(1,1,1,0.1);
+    border-radius:40px;
+    overflow:hidden;
+    margin-bottom:0.5rem;
+}
+
+.file_preview li .link{
+    line-height:0;
+    padding:0.1rem 1rem;
+    font-size:12px;
+    color:var(--gray);
+}
+
+.file_preview li .remove{
+    background-color:#3399ff;
+    color:var(--white);
+    padding:0.2rem 1rem;
+    margin:0 0 auto auto;
+    opacity:0.7;
+}
+
+.file_preview progress{
+    width:99%;
+    height:100%;
+    margin:auto;
+}
